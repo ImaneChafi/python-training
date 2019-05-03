@@ -35,12 +35,12 @@ Write a program to convert the output of the `ls -R1` command to a hierarchical 
 </tree>
 ```
 
-Hint: use `open` to read a file and `xml.etree` to work with XML.
+Hint: use [`open`](https://docs.python.org/3/library/functions.html#open) to read a file and [`xml.etree`](https://docs.python.org/3/library/xml.etree.elementtree.html) to work with XML.
 
 ### Part 2
 Adjust your program so that it accepts a directory path as a command line argument, runs `ls -R1` on that path, and then generates the XML output as before.
 
-Hint: use `sys.argv` for reading command line args and `subprocess` to run a process.
+Hint: use [`sys.argv`](https://docs.python.org/3/library/sys.html#sys.argv) for reading command line args and [`subprocess.run`](https://docs.python.org/3/library/subprocess.html#subprocess.run) to run a process.
 
 ### Part 3
 Add information about file owner and modification time to the XML file. Instead of `ls -R1`, run `ls -Rhl` to get this additional info*. Its output looks like this:
@@ -64,6 +64,6 @@ total 24
 
 The resulting XML `file` elements should now include additional attributes: `owner`, `size` (in bytes) and `modified` (formatted like `2019-05-04T12:27:02`).
 
-Hint: use the `time` module.
+Hint: use the [`time`](https://docs.python.org/3/library/time.html) module.
 
 \* No, you may not omit the `h` from the command. :)
