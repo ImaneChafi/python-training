@@ -22,7 +22,7 @@ Write a program to convert the output of the `ls -R1` command to a hierarchical 
  
  Will be converted to the following XML file:
  ```xml
-<tree generated_at="2019-04-29T20:27:02Z">
+<tree>
   <file name="file1.txt" />
   <file name="file2.mp3" />
   <folder name="folder1">
@@ -34,3 +34,36 @@ Write a program to convert the output of the `ls -R1` command to a hierarchical 
   </folder>
 </tree>
 ```
+
+Hint: use `open` to read a file and `xml.etree` to work with XML.
+
+### Part 2
+Adjust your program so that it accepts a directory path as a command line argument, runs `ls -R1` on that path, and then generates the XML output as before.
+
+Hint: use `sys.argv` for reading command line args and `subprocess` to run a process.
+
+### Part 3
+Add information about file owner and modification time to the XML file. Instead of `ls -R1`, run `ls -Rhl` to get this additional info*. Its output looks like this:
+
+```
+total 8200
+-rw-r--r--  1 matan  staff   509B  2 May 23:26 file1.txt
+-rw-r--r--  1 matan  staff   3.5M  2 May 23:27 file2.mp3
+drwxr-xr-x  4 matan  staff   128B  2 May 23:10 folder1
+
+./folder1:
+total 8192
+-rw-r--r--  1 matan  staff   3.7M  2 May 23:27 hello.py
+drwxr-xr-x  4 matan  staff   128B  2 May 23:10 nested_folder
+
+./folder1/nested_folder:
+total 24
+-rw-r--r--  1 matan  staff   8.0K  2 May 23:29 file3.txt
+-rw-r--r--  1 matan  staff   521B  2 May 23:10 file4.txt
+```
+
+The resulting XML `file` elements should now include additional attributes: `owner`, `size` (in bytes) and `modified` (formatted like `2019-05-04T12:27:02`).
+
+Hint: use the `time` module.
+
+\* No, you may not omit the `h` from the command. :)
