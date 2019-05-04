@@ -24,7 +24,8 @@ Type another artist's name:
     > asfhhklasjhf
     No artists with this name.
 
-Type another artist's name: <Ctrl+C>
+Type another artist's name:
+    > <Ctrl+C>
 
 Goodbye :)
 ```
