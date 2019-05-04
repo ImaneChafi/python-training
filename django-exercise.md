@@ -15,6 +15,7 @@ side-by-side with the score's MEI file. Use the
 [Verovio JavaScript toolkit](http://www.verovio.org/javascript.xhtml) to display
 the MEI file.
 
+#### Stage 1.5
 Create a score index page with a list of links to view each score. The score page should accept the score name as a URL query parameter.
 
 ## Stage 2
