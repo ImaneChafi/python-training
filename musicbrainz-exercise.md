@@ -7,6 +7,14 @@ Write a program to display the number of artists by gender. Only count artists w
 
 Hint: use the [`artist` API](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2/Search#Artist). Use [urllib.request](https://docs.python.org/3/library/urllib.request.html#module-urllib.request) to access the API (see [examples](https://docs.python.org/3/howto/urllib2.html#urllib-howto)). 
 
+Example output:
+```
+> python get_artists.py
+There are 459399 male artists.
+There are 122552 female artists.
+There are 402 other artists.
+```
+
 ### Part 2
 Make an interactive command line program that allows the user to search for artists.
 
