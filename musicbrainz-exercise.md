@@ -5,7 +5,7 @@ Use the [MusicBrainz Search API](https://musicbrainz.org/doc/Development/XML_Web
 ### Part 1
 Write a program to display the number of artists by gender. Only count artists who are a 'person' (rather than a 'group').
 
-Hint: use the [`artist` API](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2/Search#Artist). Use [urllib.request](https://docs.python.org/3/library/urllib.request.html#module-urllib.request) to access the API (see [examples](https://docs.python.org/3/howto/urllib2.html#urllib-howto)). 
+Hint: use the [`artist` API](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2/Search#Artist). Use [urllib.request](https://docs.python.org/3/library/urllib.request.html#module-urllib.request) to access the API (see [examples](https://docs.python.org/3/howto/urllib2.html#urllib-howto)). Note that the API returns an XML file with a [default namespace](https://docs.python.org/3/library/xml.etree.elementtree.html#parsing-xml-with-namespaces).
 
 Example output:
 ```
