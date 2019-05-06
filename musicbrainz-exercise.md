@@ -3,9 +3,9 @@
 Use the [MusicBrainz Search API](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2/Search) to display information about artists.
 
 ### Part 1
-Write a program to display the number of male, female and other artists. Only count artists who are a 'person' (rather than a 'group').
+Write a program to display the number of artists by gender. Only count artists who are a 'person' (rather than a 'group').
 
-Hint: use the [`artist` API](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2/Search#Artist). Use [urllib.request](https://docs.python.org/3/library/urllib.request.html#module-urllib.request) to access the API. 
+Hint: use the [`artist` API](https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2/Search#Artist). Use [urllib.request](https://docs.python.org/3/library/urllib.request.html#module-urllib.request) to access the API (see [examples](https://docs.python.org/3/howto/urllib2.html#urllib-howto)). 
 
 ### Part 2
 Make an interactive command line program that allows the user to search for artists.
